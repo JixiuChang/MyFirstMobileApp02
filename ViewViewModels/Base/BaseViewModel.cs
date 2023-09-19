@@ -13,10 +13,24 @@ namespace MyFirstMobileApp.ViewModels
         }
 
         string title = string.Empty;
+        string button = string.Empty;
+        string titleLayout = string.Empty;
         public string Title
         {
             get { return title; }
             set { SetProperty(ref title, value); }
+        }
+
+        public string Button
+        {
+            get { return button; }
+            set { SetProperty(ref button, value); }
+        }
+
+        public string TitleLayout
+        {
+            get { return titleLayout; }
+            set { SetProperty(ref titleLayout, value); }
         }
 
         protected bool SetProperty<T>(ref T backingStore, T value,
