@@ -1,4 +1,5 @@
 ﻿using MyFirstMobileApp.ViewViewModels.Main;
+using MyFirstMobileApp.ViewViewModels.StackLayout;
 
 namespace MyFirstMobileApp{
     public partial class App : Application
@@ -8,7 +9,8 @@ namespace MyFirstMobileApp{
             InitializeComponent();
 
             //MainPage = new AppShell();
-            MainPage = new MainView();
+            //MainPage = new MainView();
+            MainPage = new NavigationPage(new MainView());
         }
     }
 }

@@ -8,7 +8,7 @@ namespace MyFirstMobileApp.Models
 {
     public static class TitleMain
     {
-        public static String myTitle { get; } = "Main Page View";
-        public static String myButtonText { get; } = "Stack Layout";
+        public static String myTitle { get; } = "Main Menu";
+        public static String myLayoutButtonText { get; } = "Layouts";
     }
 }
