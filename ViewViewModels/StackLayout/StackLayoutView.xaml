@@ -4,47 +4,34 @@
              x:Class="MyFirstMobileApp.ViewViewModels.StackLayout.StackLayoutView"
              Title="{Binding TitleLayout}">
 
-    <ContentPage.Resources>
-        <Style TargetType="Button">
-            <Setter Property="Margin" Value="2"/>
-        </Style>
-    </ContentPage.Resources>
+    <StackLayout>
+        <StackLayout VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="CenterAndExpand">
 
-    <VerticalStackLayout>
-        <Grid Margin="25, 30, 20, 20">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+            <BoxView WidthRequest="150"
+                     HeightRequest="150"
+                     Color="#03fcd3" />
+            
+        </StackLayout>
 
-            <Button Grid.Row="0"
-                    Grid.Column="0"
-                    Text="{Binding StackLayoutButton}"
-                    Grid.ColumnSpan="2"
-                    Command="{Binding StackLayoutButtonClicked}"/>
+        <StackLayout VerticalOptions="StartAndExpand"
+                     HorizontalOptions="EndAndExpand">
 
-            <Button Grid.Row="1"
-                    Grid.Column="0"
-                    Text="{Binding HorizontalLayoutButton}"/>
+            <BoxView WidthRequest="200"
+                     HeightRequest="100"
+                     Color="#ffb8c8" />
 
-            <Button Grid.Row="1"
-                    Grid.Column="1"
-                    Text="{Binding VerticalLayoutButton}"/>
+        </StackLayout>
 
-            <Button Grid.Row="2"
-                    Grid.Column="0"
-                    Text="{Binding AbsoluteLayoutButton}"
-                    Grid.ColumnSpan="2"/>
+        <StackLayout VerticalOptions="EndAndExpand"
+                     HorizontalOptions="Start">
+            
+            <BoxView WidthRequest="100"
+                     HeightRequest="200"
+                     Color="#d161fa" />
+            
+        </StackLayout>
 
-
-
-        </Grid>
-
-    </VerticalStackLayout>
-
+    </StackLayout>
+    
 </ContentPage>

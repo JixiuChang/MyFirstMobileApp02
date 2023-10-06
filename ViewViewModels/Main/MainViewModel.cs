@@ -1,6 +1,6 @@
 ﻿using MyFirstMobileApp.Models;
 using MyFirstMobileApp.ViewModels;
-using MyFirstMobileApp.ViewViewModels.StackLayout;
+using MyFirstMobileApp.ViewViewModels.Layout;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +21,7 @@ namespace MyFirstMobileApp.ViewViewModels.Main
         }
 
         private async void LayoutClickedAsync() {
-            await Application.Current.MainPage.Navigation.PushAsync(new StackLayoutView());
+            await Application.Current.MainPage.Navigation.PushAsync(new LayoutView());
         }
     }
 }

@@ -12,19 +12,6 @@ namespace MyFirstMobileApp.ViewModels
             set { SetProperty(ref isBusy, value); }
         }
 
-        string title = string.Empty;
-        string layoutbutton = string.Empty;
-        public string Title
-        {
-            get { return title; }
-            set { SetProperty(ref title, value); }
-        }
-
-        public string LayoutButton
-        {
-            get { return layoutbutton; }
-            set { SetProperty(ref layoutbutton, value); }
-        }
 
         protected bool SetProperty<T>(ref T backingStore, T value,
                                       [CallerMemberName] string propertyName = "",

@@ -68,8 +68,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="ViewViewModels\Layout\LayoutView.xaml.cs">
+	    <DependentUpon>LayoutView.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="ViewViewModels\Main\MainView.xaml.cs">
 	    <DependentUpon>MainView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="ViewViewModels\StackLayout\StackLayoutView.xaml.cs">
+	    <DependentUpon>StackLayoutView.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
@@ -77,10 +83,10 @@
 	  <MauiXaml Update="ViewViewModels\Main\MainView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ViewViewModels\StackLayoutPage\StackLayoutPageView.xaml">
+	  <MauiXaml Update="ViewViewModels\StackLayout\StackLayoutView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ViewViewModels\StackLayout\StackLayoutView.xaml">
+	  <MauiXaml Update="ViewViewModels\Layout\LayoutView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
