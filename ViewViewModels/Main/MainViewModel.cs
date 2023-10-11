@@ -13,6 +13,9 @@ namespace MyFirstMobileApp.ViewViewModels.Main
     internal class MainViewModel : BaseViewModel {
         public ICommand LayoutButtonClicked { get; set; }
 
+        public string Title { get; set; } = string.Empty;
+        public string LayoutButton { get; set; } = string.Empty;
+
         public MainViewModel() {
             Title = TitleMain.myTitle;
             LayoutButton = TitleMain.myLayoutButtonText;

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstMobileApp.ViewViewModels.HorizontalLayout.HorizontalLayoutView"
+             Title="{Binding Title}">
+
+    <HorizontalStackLayout>
+        <BoxView HeightRequest="100"
+                 WidthRequest="100"
+                 Color="#03fcd3" />
+
+        <BoxView WidthRequest="100"
+                 HeightRequest="100"
+                 Color="#ffb8c8" />
+
+        <BoxView WidthRequest="100"
+                 HeightRequest="100"
+                 Color="#d161fa" />
+
+        <BoxView VerticalOptions="EndAndExpand"
+                 WidthRequest="100"
+                 HeightRequest="100"
+                 Color="#ed008a" />
+
+    </HorizontalStackLayout>
+
+</ContentPage>
