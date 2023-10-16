@@ -1,4 +1,4 @@
-namespace MyFirstMobileApp.ViewViewModels.HorizontalLayout;
+namespace MyFirstMobileApp.ViewViewModels.Layout.LayoutContent.HorizontalLayout;
 
 public partial class HorizontalLayoutView : ContentPage
 {

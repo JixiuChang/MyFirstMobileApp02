@@ -1,4 +1,4 @@
-namespace MyFirstMobileApp.ViewViewModels.FlexLayout;
+namespace MyFirstMobileApp.ViewViewModels.Layout.LayoutContent.FlexLayout;
 
 public partial class FlexLayoutView : ContentPage
 {

@@ -74,31 +74,31 @@
 	  <Compile Update="ViewViewModels\Main\MainView.xaml.cs">
 	    <DependentUpon>MainView.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="ViewViewModels\StackLayout\StackLayoutView.xaml.cs">
+	  <Compile Update="ViewViewModels\Layout\LayoutContent\StackLayout\StackLayoutView.xaml.cs">
 	    <DependentUpon>StackLayoutView.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="ViewViewModels\AbsoluteLayout\AbsoluteLayoutView.xaml">
+	  <MauiXaml Update="ViewViewModels\Layout\LayoutContent\AbsoluteLayout\AbsoluteLayoutView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ViewViewModels\FlexLayout\FlexLayoutView.xaml">
+	  <MauiXaml Update="ViewViewModels\Layout\LayoutContent\FlexLayout\FlexLayoutView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ViewViewModels\HorizontalLayout\HorizontalLayoutView.xaml">
+	  <MauiXaml Update="ViewViewModels\Layout\LayoutContent\HorizontalLayout\HorizontalLayoutView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\Main\MainView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ViewViewModels\StackLayout\StackLayoutView.xaml">
+	  <MauiXaml Update="ViewViewModels\Layout\LayoutContent\StackLayout\StackLayoutView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\Layout\LayoutView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ViewViewModels\VerticalLayout\VerticalLayoutView.xaml">
+	  <MauiXaml Update="ViewViewModels\Layout\LayoutContent\VerticalLayout\VerticalLayoutView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

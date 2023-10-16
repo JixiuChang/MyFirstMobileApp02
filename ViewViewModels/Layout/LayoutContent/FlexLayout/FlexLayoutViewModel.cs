@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyFirstMobileApp.ViewViewModels.FlexLayout
+namespace MyFirstMobileApp.ViewViewModels.Layout.LayoutContent.FlexLayout
 {
     internal class FlexLayoutViewModel : BaseViewModel
     {

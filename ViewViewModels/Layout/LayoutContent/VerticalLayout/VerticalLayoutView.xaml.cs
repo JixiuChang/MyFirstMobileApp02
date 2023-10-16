@@ -1,4 +1,4 @@
-namespace MyFirstMobileApp.ViewViewModels.VerticalLayout;
+namespace MyFirstMobileApp.ViewViewModels.Layout.LayoutContent.VerticalLayout;
 
 public partial class VerticalLayoutView : ContentPage
 {

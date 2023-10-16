@@ -6,13 +6,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyFirstMobileApp.ViewViewModels.VerticalLayout
+namespace MyFirstMobileApp.ViewViewModels.Layout.LayoutContent.AbsoluteLayout
 {
-    internal class VerticalLayoutViewModel : BaseViewModel
+    internal class AbsoluteLayoutViewModel : BaseViewModel
     {
         public string Title { get; set; } = string.Empty;
-        public VerticalLayoutViewModel() {
-            Title = TitleStackLayout.myTitleVertical;
+
+        public AbsoluteLayoutViewModel()
+        {
+            Title = TitleStackLayout.myTitleAbsolute;
         }
     }
 }

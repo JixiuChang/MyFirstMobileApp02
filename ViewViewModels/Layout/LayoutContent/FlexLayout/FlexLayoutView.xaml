@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstMobileApp.ViewViewModels.Layout.LayoutContent.FlexLayout.FlexLayoutView"
+             Title="{Binding Title}">
+
+    <FlexLayout Direction="RowReverse" JustifyContent="SpaceAround" AlignItems="Center" BackgroundColor="#bfffff">
+        <BoxView Color="#ed008a" WidthRequest="50" HeightRequest="50" Margin="5"/>
+        <BoxView Color="#d161fa" WidthRequest="50" HeightRequest="50" Margin="5"/>
+        <BoxView Color="#ffb8c8" WidthRequest="50" HeightRequest="50" Margin="5"/>
+    </FlexLayout>
+
+</ContentPage>

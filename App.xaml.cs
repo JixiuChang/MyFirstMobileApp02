@@ -1,5 +1,5 @@
 ﻿using MyFirstMobileApp.ViewViewModels.Main;
-using MyFirstMobileApp.ViewViewModels.StackLayout;
+using MyFirstMobileApp.ViewViewModels.Layout.LayoutContent.StackLayout;
 
 namespace MyFirstMobileApp{
     public partial class App : Application

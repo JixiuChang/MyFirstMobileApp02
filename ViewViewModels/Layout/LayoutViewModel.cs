@@ -1,10 +1,10 @@
 ﻿using MyFirstMobileApp.Models;
 using MyFirstMobileApp.ViewModels;
-using MyFirstMobileApp.ViewViewModels.AbsoluteLayout;
-using MyFirstMobileApp.ViewViewModels.FlexLayout;
-using MyFirstMobileApp.ViewViewModels.HorizontalLayout;
-using MyFirstMobileApp.ViewViewModels.StackLayout;
-using MyFirstMobileApp.ViewViewModels.VerticalLayout;
+using MyFirstMobileApp.ViewViewModels.Layout.LayoutContent.AbsoluteLayout;
+using MyFirstMobileApp.ViewViewModels.Layout.LayoutContent.VerticalLayout;
+using MyFirstMobileApp.ViewViewModels.Layout.LayoutContent.HorizontalLayout;
+using MyFirstMobileApp.ViewViewModels.Layout.LayoutContent.FlexLayout;
+using MyFirstMobileApp.ViewViewModels.Layout.LayoutContent.StackLayout;
 using System;
 using System.Collections.Generic;
 using System.Linq;

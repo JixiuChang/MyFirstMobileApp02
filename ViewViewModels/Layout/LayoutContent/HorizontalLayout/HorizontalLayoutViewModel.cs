@@ -6,15 +6,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyFirstMobileApp.ViewViewModels.AbsoluteLayout
+namespace MyFirstMobileApp.ViewViewModels.Layout.LayoutContent.HorizontalLayout
 {
-    internal class AbsoluteLayoutViewModel : BaseViewModel
+    internal class HorizontalLayoutViewModel : BaseViewModel
     {
         public string Title { get; set; } = string.Empty;
 
-        public AbsoluteLayoutViewModel()
+        public HorizontalLayoutViewModel()
         {
-            Title = TitleStackLayout.myTitleAbsolute;
+            Title = TitleStackLayout.myTitleHorizontal;
         }
     }
 }

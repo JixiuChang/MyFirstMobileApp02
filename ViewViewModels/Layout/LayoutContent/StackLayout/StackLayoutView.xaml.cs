@@ -1,4 +1,4 @@
-namespace MyFirstMobileApp.ViewViewModels.StackLayout;
+namespace MyFirstMobileApp.ViewViewModels.Layout.LayoutContent.StackLayout;
 
 public partial class StackLayoutView : ContentPage
 {
