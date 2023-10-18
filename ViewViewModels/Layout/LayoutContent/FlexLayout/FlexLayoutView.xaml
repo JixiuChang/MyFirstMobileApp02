@@ -5,18 +5,19 @@
              Title="{Binding Title}">
 
     <FlexLayout Direction="RowReverse" JustifyContent="SpaceAround" AlignItems="Center" BackgroundColor="#bfffff">
-        <VerticalStackLayout >
+        <VerticalStackLayout>
             <BoxView Color="#ed008a" WidthRequest="50" HeightRequest="50" Margin="5" VerticalOptions="End"/>
             <Label Text="Magenta" FontSize="12"/>
         </VerticalStackLayout>
-        <VerticalStackLayout >
+        <VerticalStackLayout>
             <BoxView Color="#d161fa" WidthRequest="50" HeightRequest="50" Margin="5"/>
             <Label Text="Violet" FontSize="12"/>
         </VerticalStackLayout>
-        <VerticalStackLayout >
+        <VerticalStackLayout>
             <BoxView Color="#ffb8c8" WidthRequest="50" HeightRequest="50" Margin="5"/>
             <Label Text="Peach" FontSize="12"/>
         </VerticalStackLayout>
+        
     </FlexLayout>
 
 </ContentPage>
