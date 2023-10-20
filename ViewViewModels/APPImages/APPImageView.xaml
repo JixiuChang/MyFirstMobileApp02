@@ -23,15 +23,18 @@
 
             <Button Grid.Row="0"
                     Grid.Column="0"
-                    Text="{Binding IndicatorButton}"/>
+                    Text="{Binding IndicatorButton}"
+                    Command="{Binding IndicatorButtonPressed}"/>
 
             <Button Grid.Row="1"
                     Grid.Column="0"
-                    Text="{Binding EmbeddedButton}"/>
+                    Text="{Binding EmbeddedButton}"
+                    Command="{Binding EmbeddedButtonPressed}"/>
 
             <Button Grid.Row="2"
                     Grid.Column="0"
-                    Text="{Binding URIButton}"/>
+                    Text="{Binding URIButton}"
+                    Command="{Binding URIButtonPressed}"/>
 
         </Grid>
 

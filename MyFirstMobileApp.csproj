@@ -64,6 +64,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\eyjafjalla.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
@@ -80,6 +84,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="ViewViewModels\APPImages\APPImagesContent\ActivityIndicator\ActivityIndicatorView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\APPImages\APPImagesContent\EmbeddedImage\EmbeddedImageView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\APPImages\APPImagesContent\URIImage\URIImageView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\APPImages\APPImageView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
