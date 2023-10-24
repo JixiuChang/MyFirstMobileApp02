@@ -13,8 +13,8 @@
                            VerticalOptions="CenterAndExpand"
                            HorizontalOptions="CenterAndExpand"/>
 
-        <Grid VerticalOptions="Center"
-              HorizontalOptions="Center">
+        <Grid VerticalOptions="Fill"
+              HorizontalOptions="Fill">
             
             <Image Source="{Binding GetImageSource}"
                    IsVisible="{Binding IsImageVisible}"/>

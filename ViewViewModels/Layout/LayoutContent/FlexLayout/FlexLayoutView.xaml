@@ -6,15 +6,15 @@
 
     <FlexLayout Direction="RowReverse" JustifyContent="SpaceAround" AlignItems="Center" BackgroundColor="#bfffff">
         <VerticalStackLayout>
-            <BoxView Color="#ed008a" WidthRequest="50" HeightRequest="50" Margin="5" VerticalOptions="End"/>
+            <BoxView Color="#ed008a" WidthRequest="50" HeightRequest="50"/>
             <Label Text="Magenta" FontSize="12"/>
         </VerticalStackLayout>
         <VerticalStackLayout>
-            <BoxView Color="#d161fa" WidthRequest="50" HeightRequest="50" Margin="5"/>
+            <BoxView Color="#d161fa" WidthRequest="50" HeightRequest="50" />
             <Label Text="Violet" FontSize="12"/>
         </VerticalStackLayout>
         <VerticalStackLayout>
-            <BoxView Color="#ffb8c8" WidthRequest="50" HeightRequest="50" Margin="5"/>
+            <BoxView Color="#ffb8c8" WidthRequest="50" HeightRequest="50" />
             <Label Text="Peach" FontSize="12"/>
         </VerticalStackLayout>
         

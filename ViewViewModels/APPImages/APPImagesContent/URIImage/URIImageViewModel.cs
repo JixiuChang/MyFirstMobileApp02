@@ -12,15 +12,14 @@ namespace MyFirstMobileApp.ViewViewModels.APPImages.APPImagesContent.URIImage
     {
         public string Title { get; set; } = string.Empty;
         private ImageSource _getImageSource;
-        public string ImageURL { get; set; } = string.Empty;
+        public string ImageURL { get; set; } = TitleAPPImages.myURIImageURL;
 
         public URIImageViewModel()
         {
             Title = TitleAPPImages.myTitleURI;
-            ImageURL = TitleAPPImages.myURIImageURL;
         }
 
-        private ImageSource GetImageSource
+        public ImageSource GetImageSource
         {
             get
             {

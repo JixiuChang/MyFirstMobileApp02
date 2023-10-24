@@ -4,7 +4,7 @@
              x:Class="MyFirstMobileApp.ViewViewModels.APPImages.APPImagesContent.URIImage.URIImageView"
              Title="{Binding Title}">
     
-    <VerticalStackLayout>
+    <VerticalStackLayout HorizontalOptions="Center">
 
         <Image Source="{Binding GetImageSource}"
                Aspect="AspectFill"/>

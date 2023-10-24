@@ -12,6 +12,6 @@ namespace MyFirstMobileApp.Models
         public static String myTitleEmbedded { get; set; } = "Embedded Image";
         public static String myTitleURI { get; set; } = "URI Image";
 
-        public static String myURIImageURL { get; set; } = "https://wallpaperaday.files.wordpress.com/2023/03/wallpaper71.png";
+        public static String myURIImageURL { get; set; } = "https://ih1.redbubble.net/image.1106738514.2522/fposter,small,wall_texture,product,750x1000.jpg";
     }
 }

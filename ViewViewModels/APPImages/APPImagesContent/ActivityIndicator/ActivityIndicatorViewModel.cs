@@ -39,6 +39,47 @@ namespace MyFirstMobileApp.ViewViewModels.APPImages.APPImagesContent.ActivityInd
             Title = TitleAPPImages.myTitleIndicator;
             IsLoading = true;
             IsImageVisible = false;
+            LoadImageAsync();
+        }
+
+        public ImageSource GetImageSource
+        {
+            get => _getImageSource;
+            set
+            {
+                _getImageSource = value;
+                OnPropertyChanged(nameof(GetImageSource));
+            }
+        }
+
+        private async Task LoadImageAsync()
+        {
+            try
+            {
+                using (var client = new HttpClient())
+                {
+                    var response = await client.GetAsync(TitleAPPImages.myURIImageURL);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var stream = await response.Content.ReadAsStreamAsync();
+                        GetImageSource = ImageSource.FromStream(() => stream);
+                        IsImageVisible = true;
+                    } 
+                    else
+                    {
+                        //Handle error if necessary
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error Loading Image: {ex}");
+            }
+            finally
+            {
+                IsLoading = false;
+            }
         }
 
     }
