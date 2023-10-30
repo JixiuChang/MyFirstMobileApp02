@@ -5,5 +5,6 @@ public partial class ArknightsCollectionView : ContentPage
 	public ArknightsCollectionView()
 	{
 		InitializeComponent();
+		BindingContext = new ArknightsCollectionViewModel();
 	}
 }

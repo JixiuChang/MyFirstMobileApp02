@@ -1,4 +1,5 @@
-﻿using MyFirstMobileApp.Models.Titles;
+﻿using MyFirstMobileApp.Models.Entities;
+using MyFirstMobileApp.Models.Titles;
 using MyFirstMobileApp.ViewModels;
 using MyFirstMobileApp.ViewViewModels.APPCollections.ArknightsCollection;
 using MyFirstMobileApp.ViewViewModels.APPCollections.ArknightsImageCollection;
@@ -6,6 +7,7 @@ using MyFirstMobileApp.ViewViewModels.APPCollections.UpdateableButtonCollection;
 using MyFirstMobileApp.ViewViewModels.APPCollections.UpdateableIconCollection;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
