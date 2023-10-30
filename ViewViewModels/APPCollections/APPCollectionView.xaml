@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstMobileApp.ViewViewModels.APPCollections.APPCollectionView"
+             Title="{Binding Title}">
+
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="10" />
+        </Style>
+    </ContentPage.Resources>
+
+    <StackLayout Padding="20"
+                         HorizontalOptions="Fill"
+                         VerticalOptions="CenterAndExpand">
+
+        <Button Grid.Row="0"
+                Grid.Column="0"
+                TextColor="#03fcd3"
+                Text="{Binding CollectionButton}"
+                Command="{Binding CollectionButtonPressed}"/>
+
+        <Button Grid.Row="1"
+                Grid.Column="0"
+                TextColor="#ffb8c8"
+                Text="{Binding ImageCollectionButton}"
+                Command="{Binding ImageCollectionButtonPressed}"/>
+
+        <Button Grid.Row="2"
+                Grid.Column="0"
+                TextColor="#d161fa"
+                Text="{Binding ButtonCollectionButton}"
+                Command="{Binding ButtonCollectionButtonPressed}"/>
+
+        <Button Grid.Row="3"
+                Grid.Column="0"
+                TextColor="#ed008a"
+                Text="{Binding IconCollectionButton}"
+                Command="{Binding IconCollectionButtonPressed}"/>
+
+    </StackLayout>
+
+</ContentPage>

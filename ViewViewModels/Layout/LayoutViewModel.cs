@@ -1,5 +1,4 @@
-﻿using MyFirstMobileApp.Models;
-using MyFirstMobileApp.ViewModels;
+﻿using MyFirstMobileApp.ViewModels;
 using MyFirstMobileApp.ViewViewModels.Layout.LayoutContent.AbsoluteLayout;
 using MyFirstMobileApp.ViewViewModels.Layout.LayoutContent.VerticalLayout;
 using MyFirstMobileApp.ViewViewModels.Layout.LayoutContent.HorizontalLayout;
@@ -11,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using MyFirstMobileApp.Models.Titles;
 
 namespace MyFirstMobileApp.ViewViewModels.Layout
 {

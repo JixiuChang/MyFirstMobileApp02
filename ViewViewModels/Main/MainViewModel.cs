@@ -1,5 +1,6 @@
-﻿using MyFirstMobileApp.Models;
+﻿using MyFirstMobileApp.Models.Titles;
 using MyFirstMobileApp.ViewModels;
+using MyFirstMobileApp.ViewViewModels.APPCollections;
 using MyFirstMobileApp.ViewViewModels.APPImages;
 using MyFirstMobileApp.ViewViewModels.Layout;
 using System;
@@ -15,6 +16,7 @@ namespace MyFirstMobileApp.ViewViewModels.Main
     internal class MainViewModel : BaseViewModel {
         public ICommand LayoutButtonClicked { get; set; }
         public ICommand ImagesButtonClicked { get; set; }
+        public ICommand CollectionsButtonClicked { get; set; }
 
         public string Title { get; set; } = string.Empty;
         public string LayoutButton { get; set; } = string.Empty;
@@ -33,6 +35,7 @@ namespace MyFirstMobileApp.ViewViewModels.Main
 
             LayoutButtonClicked = new Command(LayoutClickedAsync);
             ImagesButtonClicked = new Command(ImagesClickedAsync);
+            CollectionsButtonClicked = new Command(CollectionsClickedAsync);
         }
 
         private async void LayoutClickedAsync() {
@@ -42,6 +45,11 @@ namespace MyFirstMobileApp.ViewViewModels.Main
         private async void ImagesClickedAsync()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new APPImageView());
+        }
+
+        private async void CollectionsClickedAsync()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new APPCollectionView());
         }
     }
 }

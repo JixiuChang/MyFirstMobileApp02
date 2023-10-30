@@ -84,6 +84,21 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="ViewViewModels\APPCollections\APPCollectionView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\APPCollections\ArknightsCollection\ArknightsCollectionView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\APPCollections\ArknightsImageCollection\ArknightsImageCollectionView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\APPCollections\UpdateableButtonCollection\UpdateableButtonCollectionView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\APPCollections\UpdateableIconCollection\UpdateableIconCollectionView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\APPImages\APPImagesContent\ActivityIndicator\ActivityIndicatorView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -120,6 +135,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Folder Include="Resources\Images\ImageButtons\" />
 	  <Folder Include="ViewViewModels\Base\" />
 	</ItemGroup>
 

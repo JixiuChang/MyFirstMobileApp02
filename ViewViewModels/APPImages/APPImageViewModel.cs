@@ -1,4 +1,4 @@
-﻿using MyFirstMobileApp.Models;
+﻿using MyFirstMobileApp.Models.Titles;
 using MyFirstMobileApp.ViewModels;
 using MyFirstMobileApp.ViewViewModels.APPImages.APPImagesContent.ActivityIndicator;
 using MyFirstMobileApp.ViewViewModels.APPImages.APPImagesContent.EmbeddedImage;

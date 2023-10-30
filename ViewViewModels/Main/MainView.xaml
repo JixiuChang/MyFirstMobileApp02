@@ -34,7 +34,8 @@
 
             <Button Grid.Row="1"
                     Grid.Column="0"
-                    Text="{Binding CollectionsButton}"/>
+                    Text="{Binding CollectionsButton}"
+                    Command="{Binding CollectionsButtonClicked}"/>
 
             <Button Grid.Row="1"
                     Grid.Column="1"
