@@ -22,18 +22,13 @@ namespace MyFirstMobileApp.ViewViewModels.APPCollections
         public ICommand ButtonCollectionButtonPressed { get; set; }
         public ICommand IconCollectionButtonPressed { get; set; }
 
-        public string Title { get; set; } = string.Empty;
-        public string CollectionButton { get; set; } = string.Empty;
-        public string ImageCollectionButton { get; set; } = string.Empty;
-        public string ButtonCollectionButton { get; set; } = string.Empty;
-        public string IconCollectionButton { get; set; } = string.Empty;
+        public string CollectionButton { get; set; } = TitleCollections.myCollectionButtonText;
+        public string ImageCollectionButton { get; set; } = TitleCollections.myImageCollectionButtonText;
+        public string ButtonCollectionButton { get; set; } = TitleCollections.myButtonCollectionButtonText;
+        public string IconCollectionButton { get; set; } = TitleCollections.myIconCollectionButtonText;
 
         public APPCollectionViewModel() {
             Title = TitleCollections.myTitle;
-            CollectionButton = TitleCollections.myCollectionButtonText;
-            ImageCollectionButton = TitleCollections.myImageCollectionButtonText;
-            ButtonCollectionButton = TitleCollections.myButtonCollectionButtonText;
-            IconCollectionButton = TitleCollections.myIconCollectionButtonText;
 
             CollectionButtonPressed = new Command(CollectionPressedAsync);
             ImageCollectionButtonPressed = new Command(ImageCollectionPressedAsync);

@@ -10,7 +10,6 @@ namespace MyFirstMobileApp.ViewViewModels.APPImages.APPImagesContent.URIImage
 {
     class URIImageViewModel : BaseViewModel
     {
-        public string Title { get; set; } = string.Empty;
         private ImageSource _getImageSource;
         public string ImageURL { get; set; } = TitleAPPImages.myURIImageURL;
 

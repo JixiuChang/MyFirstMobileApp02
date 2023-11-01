@@ -10,7 +10,6 @@ namespace MyFirstMobileApp.ViewViewModels.APPImages.APPImagesContent.ActivityInd
 {
     class ActivityIndicatorViewModel : BaseViewModel
     {
-        public string Title { get; set; } = string.Empty;
         private ImageSource _getImageSource;
         private bool _isImageVisible;
         private bool _isLoading;

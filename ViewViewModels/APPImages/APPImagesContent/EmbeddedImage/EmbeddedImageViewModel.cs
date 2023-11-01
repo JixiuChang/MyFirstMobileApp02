@@ -10,7 +10,6 @@ namespace MyFirstMobileApp.ViewViewModels.APPImages.APPImagesContent.EmbeddedIma
 {
     class EmbeddedImageViewModel : BaseViewModel
     {
-        public string Title { get; set; } = string.Empty;
 
         public EmbeddedImageViewModel()
         {

@@ -5,5 +5,6 @@ public partial class ArknightsImageCollectionView : ContentPage
 	public ArknightsImageCollectionView()
 	{
 		InitializeComponent();
+		BindingContext = new ArknightsImageCollectionViewModel();
 	}
 }

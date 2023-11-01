@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MyFirstMobileApp.Models.Entities"
              x:Class="MyFirstMobileApp.ViewViewModels.APPCollections.ArknightsCollection.ArknightsCollectionView"
-                      Title="{Binding Title}">
+             Title="{Binding Title}">
 
     <StackLayout>
 

@@ -10,7 +10,6 @@ namespace MyFirstMobileApp.ViewViewModels.Layout.LayoutContent.HorizontalLayout
 {
     internal class HorizontalLayoutViewModel : BaseViewModel
     {
-        public string Title { get; set; } = string.Empty;
 
         public HorizontalLayoutViewModel()
         {

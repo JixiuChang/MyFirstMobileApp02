@@ -10,7 +10,6 @@ namespace MyFirstMobileApp.ViewViewModels.Layout.LayoutContent.VerticalLayout
 {
     internal class VerticalLayoutViewModel : BaseViewModel
     {
-        public string Title { get; set; } = string.Empty;
         public VerticalLayoutViewModel() {
             Title = TitleStackLayout.myTitleVertical;
         }

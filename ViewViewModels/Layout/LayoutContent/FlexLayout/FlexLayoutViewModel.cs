@@ -10,7 +10,6 @@ namespace MyFirstMobileApp.ViewViewModels.Layout.LayoutContent.FlexLayout
 {
     internal class FlexLayoutViewModel : BaseViewModel
     {
-        public string Title { get; set; } = string.Empty;
 
         public FlexLayoutViewModel()
         {

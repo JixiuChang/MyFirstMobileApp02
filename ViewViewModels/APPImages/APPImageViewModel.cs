@@ -17,16 +17,12 @@ namespace MyFirstMobileApp.ViewViewModels.APPImages
         public ICommand EmbeddedButtonPressed { get; set; }
         public ICommand URIButtonPressed { get; set; }
 
-        public string Title { get; set; } = string.Empty;
-        public string IndicatorButton { get; set; } = string.Empty;
-        public string EmbeddedButton { get; set; } = string.Empty;
-        public string URIButton { get; set; } = string.Empty;
+        public string IndicatorButton { get; set; } = TitleImages.myIndicatorButtonText;
+        public string EmbeddedButton { get; set; } = TitleImages.myEmbeddedButtonText;
+        public string URIButton { get; set; } = TitleImages.myURIButtonText;
 
         public APPImageViewModel() {
             Title = TitleImages.myTitle;
-            IndicatorButton = TitleImages.myIndicatorButtonText;
-            EmbeddedButton = TitleImages.myEmbeddedButtonText;
-            URIButton = TitleImages.myURIButtonText;
 
             IndicatorButtonPressed = new Command(IndicatorClickedAsync);
             EmbeddedButtonPressed = new Command(EmbeddedClickedAsync);

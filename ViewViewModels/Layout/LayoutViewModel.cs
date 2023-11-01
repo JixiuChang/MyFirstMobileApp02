@@ -21,20 +21,14 @@ namespace MyFirstMobileApp.ViewViewModels.Layout
         public ICommand AbsoluteLayoutButtonClicked { get; set; }
         public ICommand FlexLayoutButtonClicked { get; set; }
 
-        public string Title { get; set; } = string.Empty;
-        public string StackLayoutButton { get; set; } = string.Empty;
-        public string VerticalLayoutButton { get; set; } = string.Empty;
-        public string HorizontalLayoutButton { get; set; } = string.Empty;
-        public string AbsoluteLayoutButton { get; set; } = string.Empty;
-        public string FlexLayoutButton { get; set; } = string.Empty;
+        public string StackLayoutButton { get; set; } = TitleLayout.myButtonStack;
+        public string VerticalLayoutButton { get; set; } = TitleLayout.myButtonVertical;
+        public string HorizontalLayoutButton { get; set; } = TitleLayout.myButtonHorizontal;
+        public string AbsoluteLayoutButton { get; set; } = TitleLayout.myButtonAbsolute;
+        public string FlexLayoutButton { get; set; } = TitleLayout.myButtonFlex;
 
         public LayoutViewModel() {
             Title = TitleLayout.myTitle;
-            StackLayoutButton = TitleLayout.myButtonStack;
-            VerticalLayoutButton = TitleLayout.myButtonVertical;
-            HorizontalLayoutButton = TitleLayout.myButtonHorizontal;
-            AbsoluteLayoutButton = TitleLayout.myButtonAbsolute;
-            FlexLayoutButton = TitleLayout.myButtonFlex;
 
             StackLayoutButtonClicked = new Command(StackLayoutClickedAsync);
             VerticalLayoutButtonClicked = new Command(VerticalLayoutClickedAsync);

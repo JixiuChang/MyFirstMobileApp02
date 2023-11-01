@@ -18,20 +18,14 @@ namespace MyFirstMobileApp.ViewViewModels.Main
         public ICommand ImagesButtonClicked { get; set; }
         public ICommand CollectionsButtonClicked { get; set; }
 
-        public string Title { get; set; } = string.Empty;
-        public string LayoutButton { get; set; } = string.Empty;
-        public string ImagesButton { get; set; } = string.Empty;
-        public string CollectionsButton { get; set; } = string.Empty;
-        public string ControlsButton { get; set; } = string.Empty;
-        public string SQLLiteButton { get; set; } = string.Empty;
+        public string LayoutButton { get; set; } = TitleMain.myLayoutButtonText;
+        public string ImagesButton { get; set; } = TitleMain.myImageButtonText;
+        public string CollectionsButton { get; set; } = TitleMain.myCollectionButtonText;
+        public string ControlsButton { get; set; } = TitleMain.myControlsButtonText;
+        public string SQLLiteButton { get; set; } = TitleMain.mySQLLiteButtonText;
 
         public MainViewModel() {
             Title = TitleMain.myTitle;
-            LayoutButton = TitleMain.myLayoutButtonText;
-            ImagesButton = TitleMain.myImageButtonText;
-            CollectionsButton = TitleMain.myCollectionButtonText;
-            ControlsButton = TitleMain.myControlsButtonText;
-            SQLLiteButton = TitleMain.mySQLLiteButtonText;
 
             LayoutButtonClicked = new Command(LayoutClickedAsync);
             ImagesButtonClicked = new Command(ImagesClickedAsync);

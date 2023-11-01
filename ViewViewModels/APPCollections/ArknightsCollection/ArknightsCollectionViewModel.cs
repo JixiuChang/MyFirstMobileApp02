@@ -1,5 +1,6 @@
 ﻿using MyFirstMobileApp.Models.Entities;
 using MyFirstMobileApp.Models.Titles;
+using MyFirstMobileApp.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -10,11 +11,10 @@ using System.Threading.Tasks;
 
 namespace MyFirstMobileApp.ViewViewModels.APPCollections.ArknightsCollection
 {
-    internal class ArknightsCollectionViewModel
+    internal class ArknightsCollectionViewModel : BaseViewModel
     {
         private List<Arknights> _arknights;
         public ObservableCollection<Arknights> ArknightsCollection { get; }
-        public string Title { get; set; } = string.Empty;
 
         public ArknightsCollectionViewModel() {
             Title = TitleAPPCollections.myArknightsCollectionTitle;

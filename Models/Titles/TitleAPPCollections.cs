@@ -9,5 +9,6 @@ namespace MyFirstMobileApp.Models.Titles
     public static class TitleAPPCollections
     {
         public static String myArknightsCollectionTitle { get; set; } = "Arknights";
+        public static String myArknightsImageCollectionTitle { get; set; } = "Arknight Operators";
     }
 }

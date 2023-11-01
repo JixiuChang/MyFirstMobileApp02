@@ -10,7 +10,6 @@ namespace MyFirstMobileApp.ViewViewModels.Layout.LayoutContent.AbsoluteLayout
 {
     internal class AbsoluteLayoutViewModel : BaseViewModel
     {
-        public string Title { get; set; } = string.Empty;
 
         public AbsoluteLayoutViewModel()
         {

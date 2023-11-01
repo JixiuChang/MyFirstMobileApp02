@@ -10,9 +10,8 @@ namespace MyFirstMobileApp.ViewViewModels.Layout.LayoutContent.StackLayout
 {
     internal class StackLayoutViewModel : BaseViewModel
     {
-        public string TitleLayout { get; set; } = string.Empty;
         public StackLayoutViewModel() {
-            TitleLayout = TitleStackLayout.myTitle;
+            Title = TitleStackLayout.myTitle;
         }
     }
 }
