@@ -28,11 +28,11 @@ namespace MyFirstMobileApp.Models.Entities
         {
             var actors = new List<OperatorInfo>
             {
-                new OperatorInfo("Eyjafjalla", ImageSource.FromFile("Images/eyjafjallaSplashart.jpg"), "Leithania"),
-                new OperatorInfo("SilverAsh", ImageSource.FromFile("Images/silverashSplashart.jpg"), "Karlan"),
-                new OperatorInfo("Thorn", ImageSource.FromFile("Images/thornSplashart.jpg"), "Iberia"),
-                new OperatorInfo("Skadi", ImageSource.FromFile("Images/skadiSplashart.jpg"), "Abyss"),
-                new OperatorInfo("Exusiai", ImageSource.FromFile("Images/exusiaiSplashart.jpg"), "Laterano")
+                new OperatorInfo("Eyjafjalla", ImageSource.FromFile("Images/eyjafjalla_splashart.jpg"), "Leithania"),
+                new OperatorInfo("SilverAsh", ImageSource.FromFile("Images/silverash_splashart.jpg"), "Karlan"),
+                new OperatorInfo("Thorn", ImageSource.FromFile("Images/thorn_splashart.jpg"), "Iberia"),
+                new OperatorInfo("Skadi", ImageSource.FromFile("Images/skadi_splashart.jpg"), "Abyss"),
+                new OperatorInfo("Exusiai", ImageSource.FromFile("Images/exusiai_splashart.jpg"), "Laterano")
             };
 
             return actors;
