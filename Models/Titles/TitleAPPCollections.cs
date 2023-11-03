@@ -13,5 +13,6 @@ namespace MyFirstMobileApp.Models.Titles
         public static String myAddUpdateableTitle { get; set; } = "New Operator";
         public static String myUpdateUpdateableTitle { get; set; } = "Updating Operator";
         public static String myUpdateableButtonTitle { get; set; } = "Updateable Collection - Arknights";
+        public static String myUpdateableIconTitle { get; set; } = "Updateable Collection - Arknights";
     }
 }
