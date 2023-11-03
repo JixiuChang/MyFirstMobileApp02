@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstMobileApp.ViewViewModels.CollectionsUpdatable.AddEdit.EditCollectionView"
+             Title="{Binding Title}">
+
+    <FlexLayout Padding="5" Direction="Column">
+
+        <Label Text="Operator Name:" FontAttributes="Bold" FontSize="Large"  TextColor="Black" Margin="5,5" />
+
+        <Entry Placeholder="Enter Operator Name" FontAttributes="Bold" FontSize="Large" TextColor="#112161" HorizontalOptions="FillAndExpand"
+                   Text="{Binding OperatorName, Mode=TwoWay}" x:Name="operatorName" Margin="5,-10" />
+
+        <Button Text="Update" Command="{Binding UpdateButtonClicked}" BackgroundColor="#51a868" TextColor="White"
+                     HorizontalOptions="FillAndExpand" x:Name="updateBtn" Margin="0,10" />
+
+    </FlexLayout>
+    
+</ContentPage>

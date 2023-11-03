@@ -136,6 +136,7 @@
 
 	<ItemGroup>
 	  <Folder Include="Resources\Images\ImageButtons\" />
+	  <Folder Include="ViewViewModels\APPCollections\UpdateableAddEdit\" />
 	  <Folder Include="ViewViewModels\Base\" />
 	</ItemGroup>
 
