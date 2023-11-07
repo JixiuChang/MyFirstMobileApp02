@@ -17,7 +17,7 @@
 
     <StackLayout>
         <FlexLayout Direction="Column" AlignItems="Center">
-            <Label Text="Movies" FontSize="50" FontAttributes="Bold, Italic" TextColor="CadetBlue" />
+            <Label Text="Operators" FontSize="50" FontAttributes="Bold" TextColor="#ffb8c8" />
         </FlexLayout>
 
         <BoxView HeightRequest="2" BackgroundColor="#000000" />
@@ -30,7 +30,7 @@
                     <DataTemplate x:DataType="model:Arknights">
                         <StackLayout>
                             <FlexLayout AlignItems="Start">
-                                <Label Text="{Binding NameOfOperator, Mode=TwoWay}" FontAttributes="Bold"
+                                <Label Text="{Binding NameOfOperator, Mode=TwoWay}" Padding="5,0,0,0" FontAttributes="Bold"
                                    HorizontalTextAlignment="Start" TextColor="Black" FontSize="Medium"
                                    FlexLayout.Grow="1" />
 

@@ -17,7 +17,7 @@
 
     <StackLayout>
         <FlexLayout Direction="Column" AlignItems="Center">
-            <Label Text="Movies" FontSize="50" FontAttributes="Bold, Italic" TextColor="CadetBlue" />
+            <Label Text="Operators" FontSize="50" FontAttributes="Bold" TextColor="#ffb8c8" />
         </FlexLayout>
 
         <BoxView HeightRequest="2" BackgroundColor="#000000" />
@@ -30,16 +30,16 @@
                     <DataTemplate x:DataType="model:Arknights">
                         <StackLayout>
                             <FlexLayout AlignItems="Start">
-                                <Label Text="{Binding NameOfOperator, Mode=TwoWay}" FontAttributes="Bold"
+                                <Label Text="{Binding NameOfOperator, Mode=TwoWay}" Padding="5,0,0,0" FontAttributes="Bold"
                                    HorizontalTextAlignment="Start" TextColor="Black" FontSize="Medium"
                                    FlexLayout.Grow="1" />
 
                                 <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
-                                    <Button Text="Update" Command="{Binding Path=BindingContext.UpdateCommand, Source={x:Reference ItemsCollectionView}}"
-                                        CommandParameter="{Binding .}" TextTransform="None" HorizontalOptions="End" />
+                                    <ImageButton Source="Images/iconsedit.png" Command="{Binding Path=BindingContext.UpdateCommand, Source={x:Reference ItemsCollectionView}}"
+                                        CommandParameter="{Binding .}" HorizontalOptions="End" />
 
-                                    <Button Text="Delete" Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference ItemsCollectionView}}"
-                                        CommandParameter="{Binding .}" TextTransform="None" HorizontalOptions="End" />
+                                    <ImageButton Source="Images/iconsdelete.png" Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference ItemsCollectionView}}"
+                                        CommandParameter="{Binding .}" HorizontalOptions="End" />
                                 </StackLayout>
                             </FlexLayout>
 

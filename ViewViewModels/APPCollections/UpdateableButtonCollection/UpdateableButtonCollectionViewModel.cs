@@ -1,7 +1,7 @@
 ﻿using MyFirstMobileApp.Models.Entities;
 using MyFirstMobileApp.Models.Titles;
 using MyFirstMobileApp.ViewModels;
-using MyFirstMobileApp.ViewViewModels.CollectionsUpdatable.AddEdit;
+using MyFirstMobileApp.ViewViewModels.APPCollections.UpdateableAddEdit;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;

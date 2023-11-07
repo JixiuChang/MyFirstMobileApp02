@@ -1,7 +1,7 @@
 ﻿using MyFirstMobileApp.Models.Entities;
 using MyFirstMobileApp.Models.Titles;
 using MyFirstMobileApp.ViewModels;
-using MyFirstMobileApp.ViewViewModels.CollectionsUpdatable.AddEdit;
+using MyFirstMobileApp.ViewViewModels.APPCollections.UpdateableAddEdit;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -80,6 +80,5 @@ namespace MyFirstMobileApp.ViewViewModels.APPCollections.UpdateableIconCollectio
                 ArknightsCollection.Remove(thisOperator);
             });
 #pragma warning restore CA1416
-        }
     }
 }

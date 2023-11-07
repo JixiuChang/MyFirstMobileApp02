@@ -1,6 +1,6 @@
 using MyFirstMobileApp.Models.Entities;
 
-namespace MyFirstMobileApp.ViewViewModels.CollectionsUpdatable.AddEdit;
+namespace MyFirstMobileApp.ViewViewModels.APPCollections.UpdateableAddEdit;
 
 public partial class EditCollectionView : ContentPage
 {

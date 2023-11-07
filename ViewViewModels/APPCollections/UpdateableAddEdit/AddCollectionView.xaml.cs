@@ -1,4 +1,4 @@
-namespace MyFirstMobileApp.ViewViewModels.CollectionsUpdatable.AddEdit;
+namespace MyFirstMobileApp.ViewViewModels.APPCollections.UpdateableAddEdit;
 
 public partial class AddCollectionView : ContentPage
 {

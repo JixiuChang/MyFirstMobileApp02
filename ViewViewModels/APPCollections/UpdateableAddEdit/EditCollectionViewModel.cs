@@ -5,7 +5,7 @@ using MyFirstMobileApp.ViewModels;
 using System.Windows.Input;
 
 #pragma warning disable CA1416 
-namespace MyFirstMobileApp.ViewViewModels.CollectionsUpdatable.AddEdit
+namespace MyFirstMobileApp.ViewViewModels.APPCollections.UpdateableAddEdit
 {
     public class EditCollectionViewModel : BaseViewModel
     {

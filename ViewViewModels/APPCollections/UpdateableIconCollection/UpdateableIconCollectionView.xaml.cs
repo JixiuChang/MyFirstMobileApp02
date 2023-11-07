@@ -5,5 +5,6 @@ public partial class UpdateableIconCollectionView : ContentPage
 	public UpdateableIconCollectionView()
 	{
 		InitializeComponent();
+		BindingContext = new UpdateableIconCollectionViewModel();
 	}
 }
