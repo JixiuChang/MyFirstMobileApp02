@@ -1,6 +1,7 @@
 ﻿using MyFirstMobileApp.Models.Titles;
 using MyFirstMobileApp.ViewModels;
 using MyFirstMobileApp.ViewViewModels.APPCollections;
+using MyFirstMobileApp.ViewViewModels.APPControl;
 using MyFirstMobileApp.ViewViewModels.APPImages;
 using MyFirstMobileApp.ViewViewModels.Layout;
 using System;
@@ -17,6 +18,7 @@ namespace MyFirstMobileApp.ViewViewModels.Main
         public ICommand LayoutButtonClicked { get; set; }
         public ICommand ImagesButtonClicked { get; set; }
         public ICommand CollectionsButtonClicked { get; set; }
+        public ICommand ControlsButtonClicked { get; set; }
 
         public string LayoutButton { get; set; } = TitleMain.myLayoutButtonText;
         public string ImagesButton { get; set; } = TitleMain.myImageButtonText;
@@ -30,6 +32,7 @@ namespace MyFirstMobileApp.ViewViewModels.Main
             LayoutButtonClicked = new Command(LayoutClickedAsync);
             ImagesButtonClicked = new Command(ImagesClickedAsync);
             CollectionsButtonClicked = new Command(CollectionsClickedAsync);
+            ControlsButtonClicked = new Command(ControlsClickedAsync);
         }
 
         private async void LayoutClickedAsync() {
@@ -44,6 +47,11 @@ namespace MyFirstMobileApp.ViewViewModels.Main
         private async void CollectionsClickedAsync()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new APPCollectionView());
+        }
+
+        private async void ControlsClickedAsync()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new APPControlView());
         }
     }
 }

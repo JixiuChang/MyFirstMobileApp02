@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyFirstMobileApp.ViewViewModels.Main.MainView"
+             x:Class="MyFirstMobileApp.ViewViewModels.APPControl.APPControlView"
              Title="{Binding Title}">
+
 
     <ContentPage.Resources>
         <Style TargetType="Button">
@@ -16,6 +17,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -24,31 +26,35 @@
 
             <Button Grid.Row="0"
                     Grid.Column="0"
-                    Text="{Binding LayoutButton}"
-                    Command="{Binding LayoutButtonClicked}"/>
+                    Text="{Binding SliderButton}"
+                    Command="{Binding SliderButtonPressed}"/>
 
             <Button Grid.Row="0"
                     Grid.Column="1"
-                    Text="{Binding ImagesButton}"
-                    Command="{Binding ImagesButtonClicked}"/>
+                    Text="{Binding StepperButton}"
+                    Command="{Binding StepperButtonPressed}"/>
 
             <Button Grid.Row="1"
                     Grid.Column="0"
-                    Text="{Binding CollectionsButton}"
-                    Command="{Binding CollectionsButtonClicked}"/>
+                    Text="{Binding SwitchButton}"
+                    Command="{Binding SwitchButtonPressed}"/>
 
             <Button Grid.Row="1"
                     Grid.Column="1"
-                    Text="{Binding ControlsButton}"
-                    Command="{Binding ControlsButtonClicked}"/>
+                    Text="{Binding EntryButton}"/>
 
             <Button Grid.Row="2"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    Text="{Binding SQLLiteButton}"/>
+                    Text="{Binding PickerButton}"/>
+
+            <Button Grid.Row="3"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Text="{Binding DnTPickerButton}"/>
 
         </Grid>
-        
+
     </VerticalStackLayout>
-    
+
 </ContentPage>

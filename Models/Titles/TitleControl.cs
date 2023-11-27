@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace MyFirstMobileApp.Models.Titles
 {
-    class TitleControl
+    public static class TitleControl
     {
+        public static String myTitle { get; set; } = "Controllers";
+        public static String mySliderTitle { get; set; } = "Slider";
+        public static String myStepperTitle { get; } = "Stepper";
+        public static String mySwitchTitle { get; } = "Switch";
+        public static String myEntryTitle { get; } = "Entry";
+        public static String myPickerTitle { get; } = "Picker";
+        public static String myDnTPickerTitle { get; } = "Date and Time Picker";
     }
 }

@@ -99,6 +99,18 @@
 	  <MauiXaml Update="ViewViewModels\APPCollections\UpdateableIconCollection\UpdateableIconCollectionView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\APPControl\APPControlView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\APPControl\CollectionContent\Slider\SliderView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\APPControl\CollectionContent\Stepper\StepperView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\APPControl\CollectionContent\Switch\SwitchView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\APPImages\APPImagesContent\ActivityIndicator\ActivityIndicatorView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -137,7 +149,6 @@
 	<ItemGroup>
 	  <Folder Include="ViewViewModels\APPCollections\UpdateableAddEdit\" />
 	  <Folder Include="ViewViewModels\Base\" />
-	  <Folder Include="ViewViewModels\NewFolder\" />
 	</ItemGroup>
 
 </Project>
