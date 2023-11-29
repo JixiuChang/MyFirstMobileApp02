@@ -1,8 +1,11 @@
 ﻿using MyFirstMobileApp.Models.Titles;
 using MyFirstMobileApp.ViewModels;
-using MyFirstMobileApp.ViewViewModels.APPControl.CollectionContent.Slider;
-using MyFirstMobileApp.ViewViewModels.APPControl.CollectionContent.Stepper;
-using MyFirstMobileApp.ViewViewModels.APPControl.CollectionContent.Switch;
+using MyFirstMobileApp.ViewViewModels.APPControl.DnTPicker;
+using MyFirstMobileApp.ViewViewModels.APPControl.Entry;
+using MyFirstMobileApp.ViewViewModels.APPControl.Picker;
+using MyFirstMobileApp.ViewViewModels.APPControl.Slider;
+using MyFirstMobileApp.ViewViewModels.APPControl.Stepper;
+using MyFirstMobileApp.ViewViewModels.APPControl.Switch;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +20,9 @@ namespace MyFirstMobileApp.ViewViewModels.APPControl
         public ICommand SliderButtonPressed { get; set; }
         public ICommand StepperButtonPressed { get; set; }
         public ICommand SwitchButtonPressed { get; set; }
+        public ICommand EntryButtonPressed { get; set; }
+        public ICommand PickerButtonPressed { get; set; }
+        public ICommand DnTPickerButtonPressed { get; set; }
 
         public string SliderButton { get; set; } = TitleControl.mySliderTitle;
         public string StepperButton { get; set; } = TitleControl.myStepperTitle;
@@ -31,6 +37,9 @@ namespace MyFirstMobileApp.ViewViewModels.APPControl
             SliderButtonPressed = new Command(SliderClickedAsync);
             StepperButtonPressed = new Command(StepperClickedAsync);
             SwitchButtonPressed = new Command(SwitchClickedAsync);
+            EntryButtonPressed = new Command(EntryClickedAsync);
+            PickerButtonPressed = new Command(PickerClickedAsync);
+            DnTPickerButtonPressed = new Command(DnTPickerClickedAsync);
         }
 
         public async void SliderClickedAsync()
@@ -44,6 +53,18 @@ namespace MyFirstMobileApp.ViewViewModels.APPControl
         public async void SwitchClickedAsync()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new SwitchView());
+        }
+        public async void EntryClickedAsync()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new EntryView());
+        }
+        public async void PickerClickedAsync()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new PickerView());
+        }
+        public async void DnTPickerClickedAsync()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new DnTPickerView());
         }
 
     }

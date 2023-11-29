@@ -1,4 +1,4 @@
-namespace MyFirstMobileApp.ViewViewModels.APPControl.CollectionContent.Switch;
+namespace MyFirstMobileApp.ViewViewModels.APPControl.Switch;
 
 public partial class SwitchView : ContentPage
 {

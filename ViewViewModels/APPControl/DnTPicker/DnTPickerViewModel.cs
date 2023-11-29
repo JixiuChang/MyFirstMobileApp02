@@ -6,13 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyFirstMobileApp.ViewViewModels.APPControl.CollectionContent.Stepper
+namespace MyFirstMobileApp.ViewViewModels.APPControl.DnTPicker
 {
-    internal class StepperViewModel : BaseViewModel
+    internal class DnTPickerViewModel : BaseViewModel
     {
-        public StepperViewModel()
+        public DnTPickerViewModel() 
         {
-            Title = TitleAPPControl.myStepperViewTitle;
+            Title = TitleAPPControl.myDnTPickerViewTitle;
         }
     }
 }

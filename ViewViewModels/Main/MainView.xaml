@@ -45,7 +45,8 @@
             <Button Grid.Row="2"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    Text="{Binding SQLLiteButton}"/>
+                    Text="{Binding SQLLiteButton}"
+                    Command="{Binding SQLLiteButtonClicked}"/>
 
         </Grid>
         

@@ -4,6 +4,7 @@ using MyFirstMobileApp.ViewViewModels.APPCollections;
 using MyFirstMobileApp.ViewViewModels.APPControl;
 using MyFirstMobileApp.ViewViewModels.APPImages;
 using MyFirstMobileApp.ViewViewModels.Layout;
+using MyFirstMobileApp.ViewViewModels.SQLLite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,7 @@ namespace MyFirstMobileApp.ViewViewModels.Main
         public ICommand ImagesButtonClicked { get; set; }
         public ICommand CollectionsButtonClicked { get; set; }
         public ICommand ControlsButtonClicked { get; set; }
+        public ICommand SQLLiteButtonClicked { get; set; }
 
         public string LayoutButton { get; set; } = TitleMain.myLayoutButtonText;
         public string ImagesButton { get; set; } = TitleMain.myImageButtonText;
@@ -33,6 +35,7 @@ namespace MyFirstMobileApp.ViewViewModels.Main
             ImagesButtonClicked = new Command(ImagesClickedAsync);
             CollectionsButtonClicked = new Command(CollectionsClickedAsync);
             ControlsButtonClicked = new Command(ControlsClickedAsync);
+            SQLLiteButtonClicked = new Command(SQLLiteClickedAsync);
         }
 
         private async void LayoutClickedAsync() {
@@ -52,6 +55,10 @@ namespace MyFirstMobileApp.ViewViewModels.Main
         private async void ControlsClickedAsync()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new APPControlView());
+        }
+        private async void SQLLiteClickedAsync()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new SQLLiteView());
         }
     }
 }

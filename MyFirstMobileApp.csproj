@@ -102,13 +102,22 @@
 	  <MauiXaml Update="ViewViewModels\APPControl\APPControlView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ViewViewModels\APPControl\CollectionContent\Slider\SliderView.xaml">
+	  <MauiXaml Update="ViewViewModels\APPControl\DnTPicker\DnTPickerView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ViewViewModels\APPControl\CollectionContent\Stepper\StepperView.xaml">
+	  <MauiXaml Update="ViewViewModels\APPControl\Entry\EntryView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ViewViewModels\APPControl\CollectionContent\Switch\SwitchView.xaml">
+	  <MauiXaml Update="ViewViewModels\APPControl\Picker\PickerView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\APPControl\Slider\SliderView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\APPControl\Stepper\StepperView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\APPControl\Switch\SwitchView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\APPImages\APPImagesContent\ActivityIndicator\ActivityIndicatorView.xaml">
@@ -142,6 +151,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\Layout\LayoutContent\VerticalLayout\VerticalLayoutView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\SQLLite\SQLLiteView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

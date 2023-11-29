@@ -1,4 +1,4 @@
-namespace MyFirstMobileApp.ViewViewModels.APPControl.CollectionContent.Slider;
+namespace MyFirstMobileApp.ViewViewModels.APPControl.Slider;
 
 public partial class SliderView : ContentPage
 {

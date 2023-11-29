@@ -6,13 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyFirstMobileApp.ViewViewModels.APPControl.CollectionContent.Slider
+namespace MyFirstMobileApp.ViewViewModels.APPControl.Picker
 {
-    internal class SliderViewModel : BaseViewModel
+    internal class PickerViewModel : BaseViewModel
     {
-        public SliderViewModel() 
+        public PickerViewModel() 
         {
-            Title = TitleAPPControl.mySliderViewTitle;
+            Title = TitleAPPControl.myPickerViewTitle;
         }
     }
 }

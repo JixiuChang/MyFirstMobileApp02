@@ -11,5 +11,8 @@ namespace MyFirstMobileApp.Models.Titles
         public static String mySliderViewTitle { get; set; } = "Slider";
         public static String myStepperViewTitle { get; set; } = "Stepper";
         public static String mySwitchViewTitle { get; set; } = "Switch";
+        public static String myEntryViewTitle { get; set; } = "Entry";
+        public static String myPickerViewTitle { get; set; } = "Picker";
+        public static String myDnTPickerViewTitle { get; set; } = "Date and Time Picker";
     }
 }

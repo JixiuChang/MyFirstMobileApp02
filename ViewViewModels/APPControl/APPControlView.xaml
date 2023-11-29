@@ -41,17 +41,20 @@
 
             <Button Grid.Row="1"
                     Grid.Column="1"
-                    Text="{Binding EntryButton}"/>
+                    Text="{Binding EntryButton}"
+                    Command="{Binding EntryButtonPressed}"/>
 
             <Button Grid.Row="2"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    Text="{Binding PickerButton}"/>
+                    Text="{Binding PickerButton}"
+                    Command="{Binding PickerButtonPressed}"/>
 
             <Button Grid.Row="3"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    Text="{Binding DnTPickerButton}"/>
+                    Text="{Binding DnTPickerButton}"
+                    Command="{Binding DnTPickerButtonPressed}"/>
 
         </Grid>
 

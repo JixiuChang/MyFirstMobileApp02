@@ -1,4 +1,4 @@
-namespace MyFirstMobileApp.ViewViewModels.APPControl.CollectionContent.Stepper;
+namespace MyFirstMobileApp.ViewViewModels.APPControl.Stepper;
 
 public partial class StepperView : ContentPage
 {
