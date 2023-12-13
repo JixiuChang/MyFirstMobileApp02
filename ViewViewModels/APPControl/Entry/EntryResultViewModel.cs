@@ -10,10 +10,28 @@ namespace MyFirstMobileApp.ViewViewModels.APPControl.Entry
 {
     internal class EntryResultViewModel : BaseViewModel
     {
-        public string EntryValueText { get; set; }
-        public EntryResultViewModel()
+        private string _entryText;
+
+        public EntryResultViewModel(string entryText)
         {
             Title = TitleAPPControl.myEntryResultViewTitle;
+
+            _entryText = entryText;
+        }
+
+        public string EntryValueText
+        {
+            get
+            {
+                return _entryText;
+            }
+            set
+            {
+                if (_entryText != value)
+                {
+                    SetProperty(ref _entryText, value);
+                }
+            }
         }
     }
 }

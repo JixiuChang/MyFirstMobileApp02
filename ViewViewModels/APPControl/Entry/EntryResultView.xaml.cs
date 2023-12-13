@@ -2,9 +2,9 @@ namespace MyFirstMobileApp.ViewViewModels.APPControl.Entry;
 
 public partial class EntryResultView : ContentPage
 {
-	public EntryResultView()
+	public EntryResultView(string entryText)
 	{
 		InitializeComponent();
-		BindingContext = new EntryResultViewModel();
+		BindingContext = new EntryResultViewModel(entryText);
 	}
 }

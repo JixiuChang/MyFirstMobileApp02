@@ -5,11 +5,11 @@
              Title="{Binding Title}">
 
     <StackLayout VerticalOptions="Center">
-        <Label TextColor="#ffb8c8" Text="Entry Value:"/>
+        <Label TextColor="#885567" HorizontalOptions="Center" FontAttributes="Bold" FontSize="30" Text="Entry Value: "/>
 
-        <BoxView HeightRequest="2" BackgroundColor="#000000" WidthRequest="320" HorizontalOptions="Center"/>
+        <BoxView HeightRequest="2" Color="#888888" WidthRequest="320" HorizontalOptions="Center"/>
 
-        <Label TextColor="#03fcd3" Text="{Binding EntryValueText}"/>
+        <Label TextColor="#bb6677" HorizontalOptions="Center" FontSize="24" Text="{Binding EntryValueText}"/>
     </StackLayout>
     
 </ContentPage>

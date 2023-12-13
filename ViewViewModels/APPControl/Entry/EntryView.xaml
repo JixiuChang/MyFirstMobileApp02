@@ -5,11 +5,11 @@
              Title="{Binding Title}">
 
     <StackLayout VerticalOptions="Center">
-        <Entry x:Name="EntryValue" Placeholder="Enter Text Here" PlaceholderColor="#777777" TextColor="#ffb8c8" WidthRequest="300" HorizontalOptions="Center"/>
+        <Entry x:Name="EntryValue" Placeholder="Enter Text Here" PlaceholderColor="#777777" Text="{Binding EntryText}" TextColor="#ffb8c8" WidthRequest="300" HorizontalOptions="Center"/>
 
-        <BoxView HeightRequest="2" BackgroundColor="#000000" WidthRequest="320"/>
+        <BoxView HeightRequest="2" Color="#666666" WidthRequest="320"/>
 
-        <Button Text="Next" HorizontalOptions="Center" Margin="10" TextColor="#ffffff" BackgroundColor="#ffb8c8" Clicked=""/>
+        <Button Text="Next" HorizontalOptions="Center" Margin="10" TextColor="#ffffff" BackgroundColor="#ff4466" Command="{Binding Clicked}"/>
     </StackLayout>
 
 </ContentPage>
