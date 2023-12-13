@@ -17,7 +17,6 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -49,12 +48,6 @@
                     Grid.ColumnSpan="2"
                     Text="{Binding PickerButton}"
                     Command="{Binding PickerButtonPressed}"/>
-
-            <Button Grid.Row="3"
-                    Grid.Column="0"
-                    Grid.ColumnSpan="2"
-                    Text="{Binding DnTPickerButton}"
-                    Command="{Binding DnTPickerButtonPressed}"/>
 
         </Grid>
 

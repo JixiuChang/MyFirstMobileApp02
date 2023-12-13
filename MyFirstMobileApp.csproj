@@ -102,13 +102,16 @@
 	  <MauiXaml Update="ViewViewModels\APPControl\APPControlView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ViewViewModels\APPControl\DnTPicker\DnTPickerView.xaml">
+	  <MauiXaml Update="ViewViewModels\APPControl\Picker\DnTPicker\DnTPickerView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\APPControl\Entry\EntryResultView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\APPControl\Entry\EntryView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\APPControl\Picker\ListPicker\ListPickerView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\APPControl\Picker\PickerView.xaml">

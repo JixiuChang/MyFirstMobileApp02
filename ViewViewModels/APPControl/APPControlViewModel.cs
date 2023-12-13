@@ -22,14 +22,12 @@ namespace MyFirstMobileApp.ViewViewModels.APPControl
         public ICommand SwitchButtonPressed { get; set; }
         public ICommand EntryButtonPressed { get; set; }
         public ICommand PickerButtonPressed { get; set; }
-        public ICommand DnTPickerButtonPressed { get; set; }
 
         public string SliderButton { get; set; } = TitleControl.mySliderTitle;
         public string StepperButton { get; set; } = TitleControl.myStepperTitle;
         public string SwitchButton { get; set; } = TitleControl.mySwitchTitle;
         public string EntryButton { get; set; } = TitleControl.myEntryTitle;
         public string PickerButton { get; set; } = TitleControl.myPickerTitle;
-        public string DnTPickerButton { get; set; } = TitleControl.myDnTPickerTitle;
 
         public APPControlViewModel() {
             Title = TitleControl.myTitle;
@@ -39,7 +37,6 @@ namespace MyFirstMobileApp.ViewViewModels.APPControl
             SwitchButtonPressed = new Command(SwitchClickedAsync);
             EntryButtonPressed = new Command(EntryClickedAsync);
             PickerButtonPressed = new Command(PickerClickedAsync);
-            DnTPickerButtonPressed = new Command(DnTPickerClickedAsync);
         }
 
         public async void SliderClickedAsync()
@@ -61,10 +58,6 @@ namespace MyFirstMobileApp.ViewViewModels.APPControl
         public async void PickerClickedAsync()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new PickerView());
-        }
-        public async void DnTPickerClickedAsync()
-        {
-            await Application.Current.MainPage.Navigation.PushAsync(new DnTPickerView());
         }
 
     }

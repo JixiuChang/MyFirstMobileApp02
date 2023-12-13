@@ -6,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyFirstMobileApp.ViewViewModels.APPControl.DnTPicker
+namespace MyFirstMobileApp.ViewViewModels.APPControl.Picker.DnTPicker
 {
     internal class DnTPickerViewModel : BaseViewModel
     {
-        public DnTPickerViewModel() 
+        public DnTPickerViewModel()
         {
             Title = TitleAPPControl.myDnTPickerViewTitle;
         }
