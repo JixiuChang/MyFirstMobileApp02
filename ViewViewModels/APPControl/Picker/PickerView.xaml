@@ -4,12 +4,19 @@
              x:Class="MyFirstMobileApp.ViewViewModels.APPControl.Picker.PickerView"
              Title="{Binding Title}">
 
+
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="40"/>
+        </Style>
+    </ContentPage.Resources>
+    
     <StackLayout VerticalOptions="Center">
-        <ImageButton Command="{Binding ListPickerClicked}"/>
+        <Button Command="{Binding ListPickerClicked}" Text="Picker"/>
 
-        <BoxView HeightRequest="2" Color="#888888" WidthRequest="500" HorizontalOptions="Center"/>
+        <BoxView HeightRequest="2" Color="#888888" WidthRequest="500" HorizontalOptions="Center" Margin="50, 50, 50, 50"/>
 
-        <ImageButton Command="{Binding DnTPickerClicked}"/>
+        <Button Command="{Binding DnTPickerClicked}" Text="DnT Picker"/>
     </StackLayout>
 
 </ContentPage>

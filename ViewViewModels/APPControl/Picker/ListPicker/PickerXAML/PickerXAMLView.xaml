@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstMobileApp.ViewViewModels.APPControl.Picker.ListPicker.PickerXAML.PickerXAMLView"
+             Title="{Binding Title}">
+
+    <StackLayout>
+
+        <Label Text="Select Below:"
+               FontSize="Large"
+               FontAttributes="Bold"
+               TextColor="#885567"
+               MinimumWidthRequest="130"
+               MinimumHeightRequest="110"
+               HorizontalOptions="CenterAndExpand"
+               Margin="20" />
+
+        <BoxView HeightRequest="3"
+                 BackgroundColor="Black"
+                 WidthRequest="375" />
+
+        <StackLayout HorizontalOptions="CenterAndExpand">
+
+            <Picker x:Name="pickerXAML"
+                    Title="Select a Character"
+                    TitleColor="#bb6677"
+                    SelectedItem="{Binding SelectedOperator}"
+                    FontSize="Large"
+                    FontAttributes="Bold,Italic"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="Center"
+                    WidthRequest="300">
+
+                <Picker.ItemsSource>
+                    
+                    <x:Array Type="{x:Type x:String}">
+
+                        <x:String>Eyjafjalla</x:String>
+                        <x:String>SilverAsh</x:String>
+                        <x:String>Thorn</x:String>
+                        <x:String>Skadi</x:String>
+                        <x:String>Exusiai</x:String>
+                        <x:String>Eyjafjalla, The Hvít Aska</x:String>
+
+                    </x:Array>
+                    
+                </Picker.ItemsSource>
+
+            </Picker>
+
+            <BoxView HeightRequest="3"
+                     BackgroundColor="Black"
+                     WidthRequest="375" />
+
+            <ImageButton BackgroundColor="Transparent"
+                         Source="{Binding SubmitButton}"
+                         Command="{Binding OnSubmitClicked}"
+                         Margin="10" />
+
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

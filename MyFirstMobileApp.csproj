@@ -166,6 +166,11 @@
 
 	<ItemGroup>
 	  <Folder Include="ViewViewModels\APPCollections\UpdateableAddEdit\" />
+	  <Folder Include="ViewViewModels\APPControl\Picker\DnTPicker\PickerXAML\" />
+	  <Folder Include="ViewViewModels\APPControl\Picker\DnTPicker\PickerVM\" />
+	  <Folder Include="ViewViewModels\APPControl\Picker\ListPicker\PickerXAML\" />
+	  <Folder Include="ViewViewModels\APPControl\Picker\ListPicker\PickerVM\" />
+	  <Folder Include="ViewViewModels\APPControl\Picker\ListPicker\PickerResults\" />
 	  <Folder Include="ViewViewModels\Base\" />
 	</ItemGroup>
 

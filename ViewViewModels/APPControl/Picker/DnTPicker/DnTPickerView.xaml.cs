@@ -1,4 +1,4 @@
-namespace MyFirstMobileApp.ViewViewModels.APPControl.DnTPicker;
+namespace MyFirstMobileApp.ViewViewModels.APPControl.Picker.DnTPicker;
 
 public partial class DnTPickerView : ContentPage
 {

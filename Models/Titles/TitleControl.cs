@@ -14,6 +14,10 @@ namespace MyFirstMobileApp.Models.Titles
         public static String mySwitchTitle { get; } = "Switch";
         public static String myEntryTitle { get; } = "Entry";
         public static String myPickerTitle { get; } = "Picker";
+        public static String myPickerResultTitle { get; } = "Picker Result";
+        public static String myPickerVMTitle { get; } = "Picker View Model";
+        public static String myPickerXAMLTitle { get; } = "Picker XAML";
+
         public static String myDnTPickerTitle { get; } = "Date and Time Picker";
     }
 }

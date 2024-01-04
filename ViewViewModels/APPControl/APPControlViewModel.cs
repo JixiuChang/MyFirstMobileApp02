@@ -1,8 +1,7 @@
 ﻿using MyFirstMobileApp.Models.Titles;
 using MyFirstMobileApp.ViewModels;
-using MyFirstMobileApp.ViewViewModels.APPControl.DnTPicker;
-using MyFirstMobileApp.ViewViewModels.APPControl.Entry;
 using MyFirstMobileApp.ViewViewModels.APPControl.Picker;
+using MyFirstMobileApp.ViewViewModels.APPControl.Entry;
 using MyFirstMobileApp.ViewViewModels.APPControl.Slider;
 using MyFirstMobileApp.ViewViewModels.APPControl.Stepper;
 using MyFirstMobileApp.ViewViewModels.APPControl.Switch;

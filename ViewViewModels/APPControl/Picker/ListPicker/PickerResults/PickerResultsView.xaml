@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstMobileApp.ViewViewModels.APPControl.Picker.ListPicker.PickerResults.PickerResultsView"
+             Title="{Binding Title}">
+
+    <StackLayout>
+
+        <Label Text="Operator:"
+               FontSize="Large"
+               TextColor="#885567"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               MinimumWidthRequest="160"
+               Padding="10" />
+
+        <Label Text="{Binding PickerSelection}"
+               TextColor="#bb6677"
+               FontAttributes="Bold,Italic"
+               FontSize="Title"
+               HorizontalOptions="Center"
+               MinimumWidthRequest="250" />
+
+        <StackLayout>
+
+            <Image Source="{Binding ImageSrc}" />
+
+        </StackLayout>
+
+    </StackLayout>
+    
+</ContentPage>

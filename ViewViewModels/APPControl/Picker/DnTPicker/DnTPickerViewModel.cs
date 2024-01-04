@@ -1,18 +1,31 @@
 ﻿using MyFirstMobileApp.Models.Titles;
 using MyFirstMobileApp.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MyFirstMobileApp.ViewViewModels.ControlsCollection.DatePickerControl.DatePickerVM;
+using MyFirstMobileApp.ViewViewModels.ControlsCollection.DatePickerControl.DatePickerXAML;
+using System.Windows.Input;
 
-namespace MyFirstMobileApp.ViewViewModels.APPControl.Picker.DnTPicker
+namespace MyFirstMobileApp.ViewViewModels.APPControl.Picker.DnTPicker;
+
+public class DnTPickerViewModel : BaseViewModel
 {
-    internal class DnTPickerViewModel : BaseViewModel
+    public ICommand OnDnTPickerXAMLClicked { get; set; }
+    public ICommand OnDnTPickerVMClicked { get; set; }
+
+
+    public DnTPickerViewModel()
     {
-        public DnTPickerViewModel()
-        {
-            Title = TitleAPPControl.myDnTPickerViewTitle;
-        }
+        Title = TitleControl.myDnTPickerTitle;
+
+        OnDnTPickerXAMLClicked = new Command(OnXAMLClickedAsync);
+        OnDnTPickerVMClicked = new Command(OnVMClickedAsync);
+    }
+
+    private async void OnXAMLClickedAsync()
+    {
+        await Application.Current.MainPage.Navigation.PushAsync(new DatePickerXAMLView());
+    }
+    private async void OnVMClickedAsync()
+    {
+        await Application.Current.MainPage.Navigation.PushAsync(new DatePickerVMView());
     }
 }

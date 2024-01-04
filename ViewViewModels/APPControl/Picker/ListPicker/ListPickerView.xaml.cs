@@ -5,5 +5,6 @@ public partial class ListPickerView : ContentPage
 	public ListPickerView()
 	{
 		InitializeComponent();
+		BindingContext = new ListPickerViewModel();
 	}
 }

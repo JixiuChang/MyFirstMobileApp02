@@ -32,7 +32,8 @@ namespace MyFirstMobileApp.Models.Entities
                 new OperatorInfo("SilverAsh", ImageSource.FromFile("Images/silverash_splashart.jpg"), "Karlan"),
                 new OperatorInfo("Thorn", ImageSource.FromFile("Images/thorn_splashart.jpg"), "Iberia"),
                 new OperatorInfo("Skadi", ImageSource.FromFile("Images/skadi_splashart.jpg"), "Abyss"),
-                new OperatorInfo("Exusiai", ImageSource.FromFile("Images/exusiai_splashart.jpg"), "Laterano")
+                new OperatorInfo("Exusiai", ImageSource.FromFile("Images/exusiai_splashart.jpg"), "Laterano"),
+                new OperatorInfo("Eyjafjalla, The Hvít Aska", ImageSource.FromFile("Images/eyjafjalla_alt_splashart.jpg"), "Leithania")
             };
 
             return actors;
