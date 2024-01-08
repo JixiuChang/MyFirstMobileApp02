@@ -38,7 +38,8 @@
 
             <ImageButton BackgroundColor="Transparent"
                          Source="{Binding SubmitButton}"
-                         Command="{Binding OnSubmitClicked}" />
+                         Command="{Binding OnSubmitClicked}"
+                         Scale="0.5"/>
 
         </StackLayout>
 
