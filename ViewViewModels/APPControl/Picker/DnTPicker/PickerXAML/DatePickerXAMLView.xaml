@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyFirstMobileApp.ViewViewModels.ControlsCollection.DatePickerControl.DatePickerXAML.DatePickerXAMLView"
-             Title="{Binding Title}"
-             BackgroundColor="#2F2F31">
+             x:Class="MyFirstMobileApp.ViewViewModels.APPControl.Picker.DnTPicker.PickerXAML.DatePickerXAMLView"
+             Title="{Binding Title}">
     
     <!-- Applying a "Style" to the buttons. This will provide a space between the buttons -->
     <ContentPage.Resources>
@@ -11,7 +10,7 @@
         <Style TargetType="Button">
 
             <Setter Property="Margin"
-                    Value="5" />
+                    Value="5"/>
 
         </Style>
 
@@ -27,33 +26,34 @@
 
     <StackLayout VerticalOptions="Center">
 
-        <Label Text="Start Date"
+        <Label Text="Date Initial"
                FontAttributes="Bold"
                FontSize="Large"
-               TextColor="Red"
+               TextColor="#ffb8c8"
                HorizontalOptions="CenterAndExpand" />
 
         <DatePicker x:Name="StartDatePicker"
                     DateSelected="StartDatePicker_DateSelected"
-                    BackgroundColor="Red"
-                    TextColor="White"
+                    BackgroundColor="#ffb8c8"
+                    TextColor="Black"
                     InputTransparent="False" />
 
-        <Label Text="End Date"
+        <Label Text="Date Final"
                FontAttributes="Bold"
                FontSize="Large"
-               TextColor="White"
+               TextColor="#03fcd3"
                HorizontalOptions="CenterAndExpand" />
 
         <DatePicker x:Name="EndDatePicker"
                     DateSelected="EndDatePicker_DateSelected"
-                    BackgroundColor="White"
+                    BackgroundColor="#03fcd3"
                     TextColor="Black"
                     InputTransparent="False" />
 
         <Button BackgroundColor="Transparent"
-                ImageSource="Images/submitbutton.png"
-                Clicked="Button_Clicked" />
+                ImageSource="Images/buttonsubmit.png"
+                Clicked="Button_Clicked"
+                Scale="0.5"/>
 
     </StackLayout>
     

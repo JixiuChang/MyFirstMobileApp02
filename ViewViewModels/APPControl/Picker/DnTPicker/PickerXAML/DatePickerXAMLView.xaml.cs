@@ -1,6 +1,7 @@
 using MyFirstMobileApp.Models;
+using MyFirstMobileApp.Models.Titles;
 
-namespace MyFirstMobileApp.ViewViewModels.ControlsCollection.DatePickerControl.DatePickerXAML;
+namespace MyFirstMobileApp.ViewViewModels.APPControl.Picker.DnTPicker.PickerXAML;
 
 public partial class DatePickerXAMLView : ContentPage
 {
@@ -74,19 +75,19 @@ public partial class DatePickerXAMLView : ContentPage
 		if (_oStartDateSelected.ToShortDateString() == _startDateSelected.ToShortDateString() &&
 			_oEndDateSelected.ToShortDateString() == _endDateSelected.ToShortDateString())
 		{
-			msg = "The dates were not changed! \n\n" +
-				  "Start Date: " + _oStartDateSelected.ToShortDateString() + "\n" +
-				  "End Date: " + _oEndDateSelected.ToShortDateString();
+			msg = "There was no change made. \n\n" +
+				  "Initial Date: " + _oStartDateSelected.ToShortDateString() + "\n" +
+				  "Final Date: " + _oEndDateSelected.ToShortDateString();
 		}
 		else
 		{
-			msg = "The dates were changed! \n\n" +
-				  "Original start date selected was: " + _oStartDateSelected.ToShortDateString() + "\n" +
-				  "Original end date selected was: " + _oEndDateSelected.ToShortDateString() + "\n" +
-				  "New start date selected was: " + _startDateSelected.ToShortDateString() + "\n" +
-				  "New end date selected was: " + _endDateSelected.ToShortDateString();
+			msg = "Dates changed \n\n" +
+				  "Original date initial selected was: " + _oStartDateSelected.ToShortDateString() + "\n" +
+				  "Original date final selected was: " + _oEndDateSelected.ToShortDateString() + "\n" +
+				  "New date initial selected was: " + _startDateSelected.ToShortDateString() + "\n" +
+				  "New date selected was: " + _endDateSelected.ToShortDateString();
 		}
 
-		await Application.Current.MainPage.DisplayAlert(TitleDatePicker.DatePickerXAMLTitle, msg, "OK");
+		await Application.Current.MainPage.DisplayAlert(TitleControl.myDnTPickerXAMLTitle, msg, "OK");
 	}
 }

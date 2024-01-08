@@ -19,5 +19,7 @@ namespace MyFirstMobileApp.Models.Titles
         public static String myPickerXAMLTitle { get; } = "Picker XAML";
 
         public static String myDnTPickerTitle { get; } = "Date and Time Picker";
+        public static String myDnTPickerVMTitle { get; } = "Date and Time Picker VM";
+        public static String myDnTPickerXAMLTitle { get; } = "Date and Time Picker XAML";
     }
 }

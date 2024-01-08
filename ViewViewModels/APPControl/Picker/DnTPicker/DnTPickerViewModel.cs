@@ -1,7 +1,7 @@
 ﻿using MyFirstMobileApp.Models.Titles;
 using MyFirstMobileApp.ViewModels;
-using MyFirstMobileApp.ViewViewModels.ControlsCollection.DatePickerControl.DatePickerVM;
-using MyFirstMobileApp.ViewViewModels.ControlsCollection.DatePickerControl.DatePickerXAML;
+using MyFirstMobileApp.ViewViewModels.APPControl.Picker.DnTPicker.PickerVM;
+using MyFirstMobileApp.ViewViewModels.APPControl.Picker.DnTPicker.PickerXAML;
 using System.Windows.Input;
 
 namespace MyFirstMobileApp.ViewViewModels.APPControl.Picker.DnTPicker;

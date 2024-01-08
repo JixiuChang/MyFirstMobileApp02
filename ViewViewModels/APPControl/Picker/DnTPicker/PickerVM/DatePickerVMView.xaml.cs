@@ -1,4 +1,4 @@
-namespace MyFirstMobileApp.ViewViewModels.ControlsCollection.DatePickerControl.DatePickerVM;
+namespace MyFirstMobileApp.ViewViewModels.APPControl.Picker.DnTPicker.PickerVM;
 
 public partial class DatePickerVMView : ContentPage
 {

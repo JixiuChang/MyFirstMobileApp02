@@ -1,12 +1,12 @@
-﻿using MyFirstMobileApp.Models;
-using MyFirstMobileApp.ViewViewModels.Base;
+﻿using MyFirstMobileApp.Models.Titles;
+using MyFirstMobileApp.ViewModels;
 using System.Windows.Input;
 
-namespace MyFirstMobileApp.ViewViewModels.ControlsCollection.DatePickerControl.DatePickerVM
+namespace MyFirstMobileApp.ViewViewModels.APPControl.Picker.DnTPicker.PickerVM
 {
     public class DatePickerVMViewModel : BaseViewModel
     {
-        public ImageSource SubmitButton { get; } = "Images/submitbutton.png";
+        public ImageSource SubmitButton { get; } = "Images/buttonsubmit.png";
 
         public ICommand SubmitCommand => new Command(OnSubmit);
 
@@ -17,9 +17,8 @@ namespace MyFirstMobileApp.ViewViewModels.ControlsCollection.DatePickerControl.D
 
         public DatePickerVMViewModel()
         {
-            Title = TitleDatePicker.DatePickerVMTitle;
+            Title = TitleControl.myDnTPickerVMTitle;
 
-            //Set initial values
             StartDate = new DateTime(DateTime.Now.Year, 1, 1);
             MinStartDate = new DateTime(DateTime.Now.Year, 1, 1);
             EndDate = new DateTime(DateTime.Now.Year, 12, 31);
@@ -57,20 +56,20 @@ namespace MyFirstMobileApp.ViewViewModels.ControlsCollection.DatePickerControl.D
             if (StartDate.ToShortDateString() == MinStartDate.ToShortDateString() &&
                 EndDate.ToShortDateString() == MaxEndDate.ToShortDateString())
             {
-                msg = "The dates were not changed! \n\n" +
-                      "StartDate: " + MinStartDate.ToShortDateString() + "\n" +
-                      "EndDate: " + MaxEndDate.ToShortDateString();
+                msg = "There was no change made. \n\n" +
+                      "Initial Date: " + MinStartDate.ToShortDateString() + "\n" +
+                      "Final Date: " + MaxEndDate.ToShortDateString();
             }
             else
             {
                 msg = "The dates were changed! \n\n" +
-                      "Original start date selected was: " + MinStartDate.ToShortDateString() + "\n" +
-                      "Original end date selected was: " + MaxEndDate.ToShortDateString() + "\n" +
-                      "New start date selected is: " + StartDate.ToShortDateString() + "\n" +
-                      "New end date selected is: " + EndDate.ToShortDateString();
+                      "Original date initial selected was: " + MinStartDate.ToShortDateString() + "\n" +
+                      "Original date final selected was: " + MaxEndDate.ToShortDateString() + "\n" +
+                      "New date initial selected is: " + StartDate.ToShortDateString() + "\n" +
+                      "New date final selected is: " + EndDate.ToShortDateString();
             }
 
-            await Application.Current.MainPage.DisplayAlert(TitleDatePicker.DatePickerVMTitle, msg, "OK");
+            await Application.Current.MainPage.DisplayAlert(TitleControl.myDnTPickerVMTitle, msg, "OK");
         }
     }
 }
