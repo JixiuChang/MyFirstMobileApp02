@@ -32,12 +32,13 @@ namespace MyFirstMobileApp.ViewModels
             return true;
         }
 
-        #region INotifyPropertyChanged
+        #region #region INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
         #endregion
+
     }
 }

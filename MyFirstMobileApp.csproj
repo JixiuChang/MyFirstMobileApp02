@@ -69,6 +69,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -80,6 +81,12 @@
 	  </Compile>
 	  <Compile Update="ViewViewModels\Layout\LayoutContent\StackLayout\StackLayoutView.xaml.cs">
 	    <DependentUpon>StackLayoutView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="ViewViewModels\SQLite\ArknightMgmtView.xaml.cs">
+	    <DependentUpon>ArknightMgmtView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="ViewViewModels\SQLite\ArknightView.xaml.cs">
+	    <DependentUpon>ArknightView.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
