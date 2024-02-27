@@ -4,7 +4,7 @@ using MyFirstMobileApp.ViewViewModels.APPCollections;
 using MyFirstMobileApp.ViewViewModels.APPControl;
 using MyFirstMobileApp.ViewViewModels.APPImages;
 using MyFirstMobileApp.ViewViewModels.Layout;
-using MyFirstMobileApp.ViewViewModels.SQLLite;
+using MyFirstMobileApp.ViewViewModels.SQLite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -58,7 +58,7 @@ namespace MyFirstMobileApp.ViewViewModels.Main
         }
         private async void SQLLiteClickedAsync()
         {
-            await Application.Current.MainPage.Navigation.PushAsync(new SQLLiteView());
+            await Application.Current.MainPage.Navigation.PushAsync(new ArknightView());
         }
     }
 }

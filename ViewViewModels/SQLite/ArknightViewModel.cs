@@ -2,9 +2,10 @@
 using MyFirstMobileApp.Models.Entities;
 using MyFirstMobileApp.Models.Titles;
 using MyFirstMobileApp.ViewModels;
+using MyFirstMobileApp.ViewViewModels.SQLite;
 using System.Collections.ObjectModel;
 
-namespace MyFirstMobileApp.ViewViewModels.Vacations
+namespace MyFirstMobileApp.ViewViewModels.SQLite
 {
     //ViewModel for managing Vacation data
     public class ArknightViewModel : BaseViewModel
@@ -12,15 +13,15 @@ namespace MyFirstMobileApp.ViewViewModels.Vacations
         private readonly SQLiteImplementation _sqliteService = new SQLiteImplementation();
 
         //Collection to hold vacation data for the UI
-        private ObservableCollection<Vacation> _vacationCollection;
+        private ObservableCollection<ArknightsSQLite> _arknightsCollection;
 
         //Property to expose the vacation collection to the UI
-        public ObservableCollection<Vacation> VacationCollection
+        public ObservableCollection<ArknightsSQLite> ArknightsCollection
         {
-            get { return _vacationCollection; }
+            get { return _arknightsCollection; }
             set
             {
-                _vacationCollection = value;
+                _arknightsCollection = value;
                 OnPropertyChanged();
                 //Debug.WriteLine($"VacationCollection Count: {_vacationCollection?.Count}");
             }
@@ -29,24 +30,24 @@ namespace MyFirstMobileApp.ViewViewModels.Vacations
         //Constructor to initialize the ViewModel
         public ArknightViewModel()
         {
-            Title = TitleVacations.TitleVacation;
+            Title = TitleSQLite.myArknightSQLiteTitle;
 
             //Initialize the vacation collection
-            VacationCollection = new ObservableCollection<Vacation>();
+            ArknightsCollection = new ObservableCollection<ArknightsSQLite>();
 
             //Trigger an asynchronous refresh of the vacation list data
-            Task.Run(async () => await RefreshVacationListData());
+            Task.Run(async () => await RefreshArknightsListData());
 
-            _ = RefreshVacationListData();
+            _ = RefreshArknightsListData();
         }
 
-        public async Task RefreshVacationListData()
+        public async Task RefreshArknightsListData()
         {
             // Retrieve vacation data from the SQLite database
-            var vacation = await _sqliteService.GetVacation();
+            var arknight = await _sqliteService.GetArknight();
 
             // Update the ViewModel's vacation collection with the new data
-            VacationCollection = new ObservableCollection<Vacation>(vacation);
+            ArknightsCollection = new ObservableCollection<ArknightsSQLite>(arknight);
         }
 
         //Command to navigate to the VacationMgmtView and handle Adds
@@ -54,21 +55,21 @@ namespace MyFirstMobileApp.ViewViewModels.Vacations
         {
             get
             {
-                return new Command<Vacation>((Vacation vacation) =>
+                return new Command<ArknightsSQLite>((ArknightsSQLite arknight) =>
                 {
                     //Unsubscribe from events - precautionary step to ensure that there are no existing subscriptions for the specified events
-                    MessagingCenter.Unsubscribe<Vacation>(this, "AddVacation");
+                    MessagingCenter.Unsubscribe<ArknightsSQLite>(this, "AddOperator");
 
                     //Navigate to the VacationAddView, passing a vacation if available
-                    Application.Current.MainPage.Navigation.PushAsync(new VacationMgmtView(vacation));
+                    Application.Current.MainPage.Navigation.PushAsync(new ArknightMgmtView(arknight));
 
                     //Subscribe to a MessagingCenter event for refreshing data when a new vacation is added
-                    MessagingCenter.Subscribe<Vacation>(this, "AddVacation", async (data) =>
+                    MessagingCenter.Subscribe<ArknightsSQLite>(this, "AddOperator", async (data) =>
                     {
                         //Refresh the vacation list data asynchronously
-                        await RefreshVacationListData();
+                        await RefreshArknightsListData();
                         //Unsubscribe from the MessagingCenter event after refreshing data
-                        MessagingCenter.Unsubscribe<Vacation>(this, "AddVacation");
+                        MessagingCenter.Unsubscribe<ArknightsSQLite>(this, "AddOperator");
                     });
                 });
             }
@@ -79,38 +80,38 @@ namespace MyFirstMobileApp.ViewViewModels.Vacations
         {
             get
             {
-                return new Command<Vacation>((Vacation vacation) =>
+                return new Command<ArknightsSQLite>((ArknightsSQLite arknight) =>
                 {
                     //Unsubscribe from events - precautionary step to ensure that there are no existing subscriptions for the specified events
-                    MessagingCenter.Unsubscribe<Vacation>(this, "UpdateVacation");
+                    MessagingCenter.Unsubscribe<ArknightsSQLite>(this, "UpdateOperator");
 
                     //Navigate to the VacationAddView, passing a vacation if available
-                    Application.Current.MainPage.Navigation.PushAsync(new VacationMgmtView(vacation));
+                    Application.Current.MainPage.Navigation.PushAsync(new ArknightMgmtView(arknight));
 
                     //Subscribe to a MessagingCenter event for refreshing data when a new vacation is updated
-                    MessagingCenter.Subscribe<Vacation>(this, "UpdateVacation", async (data) =>
+                    MessagingCenter.Subscribe<ArknightsSQLite>(this, "UpdateOperator", async (data) =>
                     {
                         // Refresh the vacation list data asynchronously
-                        await RefreshVacationListData();
+                        await RefreshArknightsListData();
                         // Unsubscribe from the MessagingCenter event after refreshing data
-                        MessagingCenter.Unsubscribe<Vacation>(this, "UpdateVacation");
+                        MessagingCenter.Unsubscribe<ArknightsSQLite>(this, "UpdateOperator");
                     });
                 });
             }
         }
 
         //Command to delete a vacation and update the collection
-        public Command<Vacation> DeleteCommand
+        public Command<ArknightsSQLite> DeleteCommand
         {
             get
             {
-                return new Command<Vacation>((Vacation vacation) =>
+                return new Command<ArknightsSQLite>((ArknightsSQLite arknight) =>
                 {
                     //Delete the vacation from the SQLite database
-                    _ = _sqliteService.DeleteVacation(vacation.Id);
+                    _ = _sqliteService.DeleteArknight(arknight.Id);
 
                     //Remove the vacation from the ViewModel's collection
-                    VacationCollection.Remove(vacation);
+                    ArknightsCollection.Remove(arknight);
                 });
             }
         }

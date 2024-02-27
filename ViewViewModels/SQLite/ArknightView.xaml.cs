@@ -1,8 +1,8 @@
-namespace MyFirstMobileApp.ViewViewModels.Vacations;
+namespace MyFirstMobileApp.ViewViewModels.SQLite;
 
-public partial class VacationView : ContentPage
+public partial class ArknightView : ContentPage
 {
-	public VacationView()
+	public ArknightView()
 	{
 		InitializeComponent();
 		BindingContext = new ArknightViewModel();

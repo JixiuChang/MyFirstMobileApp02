@@ -13,24 +13,24 @@
 
     <StackLayout>
         <StackLayout HorizontalOptions="CenterAndExpand">
-            <Label Text="Register Operator" FontSize="25" FontAttributes="Bold,Italic" TextColor="CadetBlue" />
+            <Label Text="Register Operator" FontSize="25" FontAttributes="Bold" TextColor="#ffb8c8" />
         </StackLayout>
 
         <Entry Placeholder="Enter Name"  FontSize="Medium"  HorizontalOptions="FillAndExpand"
-                  Text="{Binding OperatorName}" TextColor="Blue" x:Name="OperatorNameTitle" />
+                  Text="{Binding OperatorName}" TextColor="#4444FF" x:Name="OperatorNameTitle" />
 
         <Entry Placeholder="Enter Origin"  FontSize="Medium"  HorizontalOptions="FillAndExpand"
-                  Text="{Binding OperatorOrigin}" TextColor="Blue" x:Name="OperatorOriginTitle" />
+                  Text="{Binding OperatorOrigin}" TextColor="#4444FF" x:Name="OperatorOriginTitle" />
 
         <StackLayout HorizontalOptions="Center">
-            <Label Text="Owned?"  x:Name="label" FontSize="Medium"  TextColor="Blue" FontAttributes="Bold" />
+            <Label Text="Owned?"  x:Name="label" FontSize="Medium"  TextColor="#4444FF" FontAttributes="Bold" />
 
-            <Switch x:Name="OwnedOperator" IsToggled="{Binding OperatorOwned, Mode=TwoWay}" ThumbColor="Blue" OnColor="Green" />
+            <Switch x:Name="OwnedOperator" IsToggled="{Binding OperatorOwned, Mode=TwoWay}" ThumbColor="#bbbbbb" OnColor="#03fcd3" />
         </StackLayout>
 
         <StackLayout HorizontalOptions="FillAndExpand">
             <Button Text="{Binding ButtonText, Mode=TwoWay}"  Command="{Binding PerformSave}" Padding="20"
-                         BackgroundColor="Green" TextColor="White" FontSize="Medium" FontAttributes="Bold" x:Name="saveBtn" />
+                         BackgroundColor="#ffb8c8" TextColor="Black" FontSize="Medium" FontAttributes="Bold" x:Name="saveBtn" />
         </StackLayout>
 
     </StackLayout>
