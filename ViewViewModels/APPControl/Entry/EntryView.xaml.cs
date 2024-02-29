@@ -1,4 +1,3 @@
-using Android.Provider;
 using MyFirstMobileApp.Models.Titles;
 
 namespace MyFirstMobileApp.ViewViewModels.APPControl.Entry;

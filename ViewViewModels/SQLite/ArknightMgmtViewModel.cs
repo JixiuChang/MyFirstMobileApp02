@@ -85,7 +85,7 @@ namespace MyFirstMobileApp.ViewViewModels.SQLite
                             if (result == string.Empty)
                             {
                                 //Send a message to notify about the addition of a new vacation
-                                MessagingCenter.Send<ArknightsSQLite>(myArknight, "AddArknight");
+                                MessagingCenter.Send<ArknightsSQLite>(myArknight, "AddOperator");
 
                                 if (Application.Current.MainPage != null)
                                 {
@@ -114,7 +114,7 @@ namespace MyFirstMobileApp.ViewViewModels.SQLite
                             if (result)
                             {
                                 //Send a message to notify about the update of the vacation
-                                MessagingCenter.Send<ArknightsSQLite>(myArknight, "UpdateArknight");
+                                MessagingCenter.Send<ArknightsSQLite>(myArknight, "UpdateOperator");
                                 await Application.Current.MainPage.Navigation.PopAsync();
                             }
                             else

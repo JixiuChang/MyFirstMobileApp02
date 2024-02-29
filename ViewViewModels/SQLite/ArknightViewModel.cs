@@ -61,7 +61,7 @@ namespace MyFirstMobileApp.ViewViewModels.SQLite
                     MessagingCenter.Unsubscribe<ArknightsSQLite>(this, "AddOperator");
 
                     //Navigate to the VacationAddView, passing a vacation if available
-                    Application.Current.MainPage.Navigation.PushAsync(new ArknightMgmtView(arknight));
+                   Application.Current.MainPage.Navigation.PushAsync(new ArknightMgmtView(arknight));
 
                     //Subscribe to a MessagingCenter event for refreshing data when a new vacation is added
                     MessagingCenter.Subscribe<ArknightsSQLite>(this, "AddOperator", async (data) =>
